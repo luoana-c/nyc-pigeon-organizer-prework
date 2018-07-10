@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
     data.each do |property, type|
       type.each do |attribute, names|
         if names.include?(pigeon) 
-          pigeon_list[pigeon][property].push(attribute)
+          pigeon_list[pigeon][property].push(attribute.to_s)
         end
       end
     end   
